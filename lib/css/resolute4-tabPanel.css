@@ -1,0 +1,28 @@
+/* Resolute.EntityWindow */
+.tabPanel {
+	display: flex;
+}
+.tabPanel-item {
+	cursor: pointer;
+	font-size: 11px;
+	text-align: center;
+	padding: 6px 12px;
+	margin-bottom: -1px;
+	border: 1px solid transparent;
+	border-radius: 9px 9px 0 0;
+	color: #333;
+}
+.tabPanel-item.selected {
+	background-color: #FFFFFF63;
+	color: #468;
+	border: 1px solid #565c7d30;
+	border-bottom-color: #FFFFFF63;
+	font-size: 12px;
+}
+.tabPanel-item.disabled {
+	color: #888;
+}
+.tabPanel-item.invalid {
+	color: red;
+}
+

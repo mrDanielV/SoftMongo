@@ -1,0 +1,12 @@
+/* Resolute.EntityWindow */
+.r-entity-form {
+	border: 1px solid #565c7d30;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #FFFFFF63;
+}
+
+.r-entity-form.has-tabs {
+	border-radius: 0 5px 5px 5px;
+}
+

@@ -1,0 +1,170 @@
+/* LIST - список-переключатель */
+
+/* Основной элемент*/
+
+
+.field-wrap.list .field {
+	background-color: transparent;
+	border:none;
+	outline: none;
+	padding: 0px;
+	max-height: unset;
+}
+.field-wrap.list .field .buttons{
+	display:none;
+	visibility:hidden;
+}
+
+.r-list {
+	flex: 1;
+	cursor: pointer;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	font-size: 12px;
+	min-height: 22px;
+	gap: 3px;
+}
+.r-list.vertical{
+	flex-wrap:wrap;
+	background: linear-gradient(to bottom, #fff 0%,#ebe9e9 100%);
+}
+.r-list.vertical .item {
+	border-left: 1px solid #b5b8c8;
+	border-right: 1px solid #b5b8c8;
+	border-top: 1px solid #b5b8c8;
+	border-bottom: none;
+	background:none;
+}
+/*
+.r-list:focus .r-list-item{
+	border-width: 2px;
+	border-color: #4779a8;
+}
+*/
+/* Переключатели */
+.field-wrap.list .field .item {
+	color: #446688;
+	padding: 4px;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-self: stretch;
+	text-align: center;
+	background: none;
+	text-shadow: 0 1px 1px rgba(255,255,255,1);
+	border-radius: 3px;
+	border: 1px solid #94a7b996;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.field-wrap.list .field .item:first-child {
+
+}
+.field-wrap.list .field .r-list.vertical .item:first-child {
+
+}
+.field-wrap.list .field .item:last-child {
+
+}
+.field-wrap.list .field .r-list.vertical .item:last-child {
+
+}
+.field-wrap.list .field .item.active {
+	color: #353f48;
+	text-shadow: none;
+	border-radius: 3px;
+	border: 1px solid #fffffff7;
+	outline: 1px solid #4466889c;
+	background-color: #e0e2ff;
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+.field-wrap.list .field .item:hover{
+	background-color: #ffffff44;
+}
+.field-wrap.list .field .item.active:hover{
+	background-color: #e0e2ff;
+}
+
+
+
+.field-wrap.list.boxes{
+	margin-bottom: 12px !important;
+}
+
+.field-wrap.list.boxes .field .item {
+	color: #446688;
+	border-right: none;
+	border-left: none;
+	background: none;
+	text-shadow: 0 1px 1px rgba(255,255,255,1);
+	border: 1px solid #94a7b996;
+	border-radius: 4px;
+	padding: 12px;
+	margin: 1px;
+	display: flex;
+	text-align: justify;
+	flex-direction: column;
+	align-items: baseline;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.field-wrap.list.boxes .field .item:hover{
+	background-color: #ffffff44;
+}
+
+.field-wrap.list.boxes .field .item .title {
+	margin-top: 0;
+	margin-bottom: 12px;
+	font-size: 1em;
+	font-weight: bold;
+}
+.field-wrap.list.boxes .field {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	padding: 0px;
+	max-height: unset;
+}
+.field-wrap.list.boxes .field .item.active {
+	text-shadow: none;
+	color: #444;
+	background: none !important;
+	background-color: #ffe37a !important;
+	padding: 12px;
+	border-radius: 3px;
+	border: 1px solid #fffffff7;
+	outline: 1px solid #4466889c;
+	text-align: justify;
+	margin: 1px;
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+.field-wrap.list.boxes .field .item .desc{
+	flex: 2;
+	min-width:190px;
+}
+.field-wrap.list.boxes .field .item .bottom {
+	margin-top: 0.5em;
+	align-self: self-end;
+}
+.field-wrap.list.boxes .field .item .bottom .premium{
+	font-size: 22px;
+	font-family: "ff-good-sc-web-pro";
+}
+.field-wrap.list.boxes .field .item .bottom .ruble {
+	font-size: 11px;
+	font-family: Tahoma,Arial,sans-serif;
+	margin-left: 4px;
+}
+.field-wrap.list.boxes .field .item .bottom .small {
+	font-size: 11px;
+	font-family: Tahoma,Arial,sans-serif;
+	margin-right: 11px;
+}
+
+.field-wrap.list.boxes .r-list {
+	gap: 3px;
+	flex-wrap: wrap;
+	flex-direction: row;
+	background: none;
+}

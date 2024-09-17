@@ -1,0 +1,129 @@
+/* SliderField CSS */
+
+.field-wrap.slider.valued-top .field {
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+.field-wrap.slider .field {
+	border: none;
+	outline: none;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	max-height: unset;
+	background-color: transparent;
+}
+.r-slider-value {
+	font-weight: bold;
+	color:#446688;
+	min-width: 24px;
+	margin-right: 10px;
+}
+.r-slider-box {
+	cursor: pointer;
+	position: relative;
+	flex: 1;
+	min-height: 25px;
+	box-sizing: border-box;
+	/* pointer-events: none; */
+}
+.r-slider-track {
+	background-color: #C6C6C6;
+	width: 100%;
+	height: 7px;
+	border-radius: 3px;
+	pointer-events: none;
+	border: 1px solid #999;
+	box-sizing: border-box;
+	top: 4px;
+	position: relative;
+}
+.resolute-field-slider:focus .r-slider-track {
+	/*outline: 1px solid #529fe8;*/
+	border-color: #666;
+	background-color: #aea2a2;
+}
+.r-slider-bar {
+	position: absolute;
+	top: 4px;
+	width: 0px;
+	height: 7px;
+	border-radius: 3px;
+	pointer-events: none;
+	background-color: #5785CE;
+	background: linear-gradient(to left, rgb(87, 133, 206), rgb(51, 89, 149));
+}
+.r-slider-roll {
+	position: absolute;
+	top: -2px;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background-color: #5785CE;
+	box-shadow: #888 1px 1px 3px 0px;
+	backface-visibility: hidden;
+	border: 2px solid #FFF;
+	box-sizing: border-box;
+}
+.r-slider-roll.move {
+	background-color: #A9C8F0;
+}
+.r-slider-roll-alt {
+	position: absolute;
+	top: -23px;
+	left: -4px;
+	min-width: 24px;
+	text-align: center;
+	background: #FFF;
+	padding: 2px;
+	border: 1px solid #468;
+	font-size: 11px;
+	border-radius: 5px;
+	box-shadow: #888 1px 1px 3px -1px;
+}
+.r-slider-points-bar {
+	position: relative;
+	height: 5px;
+	top: -6px;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+.r-slider-points {
+	display: flex;
+}
+.r-slider-point {
+	border-right: 1px solid #9fa1a6;
+	height: 10px;
+	flex: 1;
+}
+.r-slider-point:first-child {
+	border-left: 1px solid #9fa1a6;
+}
+.r-slider-point:last-child {
+	/*border: none;*/
+}
+
+.r-slider-marks-bar {
+	/*position: relative;
+	top: -5px;*/
+	margin-left: 8px;
+	margin-right: 8px;
+	font-size: 11px;
+	color: #666;
+}
+.r-slider-marks {
+	display: flex;
+}
+.r-slider-mark {
+	flex: 1;
+	text-align: center;
+}
+.r-slider-mark:first-child {
+	flex: 0.5;
+	text-align: left;
+}
+.r-slider-mark:last-child {
+	flex: 0.5;
+	text-align: right;
+}

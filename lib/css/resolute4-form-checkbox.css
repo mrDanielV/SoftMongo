@@ -1,0 +1,157 @@
+/* Чекбокс */
+
+.field-wrap.checkbox .field {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	padding: 0px;
+	max-height: unset;
+}
+.field-wrap.checkbox.focused .field{
+	border:none;
+	outline:none;
+	padding:0;
+}
+.r-checkbox {
+	cursor:pointer;
+	display:flex;
+}
+.r-checkbox .r-check-box{
+	border: 1px solid #9b9da8;
+	border-radius: 3px;
+	background-color: #fff;
+	outline: 1px solid #9b9da84f;
+}
+.r-checkbox:focus .r-check-ball{
+	outline:2px solid #529fe8;
+}
+.r-checkbox:focus .r-check-box{
+	outline:2px solid #529fe8;
+}
+.r-checkbox.clicked:focus .r-check-ball{
+	outline:inherit;
+}
+.r-checkbox.clicked:focus .r-check-box{
+	outline:inherit;
+}
+.r-checkbox.clicked:focus .r-check-boxempty{
+	outline:inherit;
+}
+.r-check-ball {
+	width: 36px;
+	height: 16px;
+	background-color: #cecdcd;
+	margin: 5px 0px 0px 0px;
+	border-radius: 8px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.2) inset;
+	position: relative;
+	transition: background-color 0.12s;
+}
+.r-check-box {
+	width: 16px;
+	height: 16px;
+	margin-top: 3px;
+	border-radius: 2px;
+	position: relative;
+	transition: background-color 0.12s;
+}
+.r-check-boxempty {
+	width: 18px;
+	height: 18px;
+	margin-top: 5px;
+	margin-right: 3px;
+	position: relative;
+}
+.checked .r-check-ball{
+	background-color:#e0e2ff;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.4) inset;
+}
+.r-check-slider {
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	width: 20px;
+	height: 20px;
+	background-color: #d5c6c6;
+	border-radius: 50%;
+	box-shadow: 1px 0 2px rgba(0,0,0,0.3), 0 -2px 4px rgba(0,0,0,0.12) inset;
+	transition: all 0.12s;
+	border: 2px solid #f4f4f4;
+	box-sizing: border-box;
+}
+.r-check-checkmark {
+	position: absolute;
+	top: -4px;
+	left: -1px;
+	width: 20px;
+	height: 20px;
+	box-sizing: border-box;
+	transition: all 0.12s;
+	
+}
+.r-check-default {
+	position: absolute;
+	top: -4px;
+	left: -1px;
+	width: 20px;
+	height: 20px;
+	box-sizing: border-box;
+	transition: all 0.12s;
+	
+}
+.r-check-label-off{
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	font-size: 12px;
+	color: #446688;
+}
+.r-check-label-on{
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	font-size: 12px;
+	color: #446688;
+}
+
+.checked .r-check-ball .r-check-slider {
+	background-color: #4d95d2;
+	border-color: #dbefff;
+	box-shadow: -1px 0 2px rgba(0,0,0,0.3), 0 -2px 4px rgba(0,0,0,0.3) inset;
+	left: calc(100% - 18px);
+}
+.checked .r-check-box .r-check-checkmark {
+	background-image: url('../../images/resolute4/checkbox/v.png');
+}
+.checked .r-check-boxempty .r-check-checkmark {
+	background-image: url('../../images/resolute4/checkbox/v.png');
+}
+
+.r-boxlabel{
+	display:flex;
+	padding-left: 7px;
+	padding-top: 5px;
+	cursor: default;
+	min-height: 19px;
+	font-size: 12px;
+	color: #446688;
+	flex:2;
+}
+.r-boxlabel span{
+	opacity:0.78;
+}
+.checked .r-boxlabel span{
+	opacity:1;
+}
+.xs.mobile .r-boxlabel,.xxs.mobile .r-boxlabel{
+	font-size: 14px;
+}
+.r-boxIcon{
+	margin-left: 3px;
+}
+.r-boxIcon .material-icons {
+	font-size: 19px;
+	top: -2px;
+	position: relative;
+	color: #4484bb;
+}

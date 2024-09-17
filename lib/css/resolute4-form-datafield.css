@@ -1,0 +1,18 @@
+/* DataField */
+
+.field-wrap.datafield .field {
+	height: auto;
+	min-height: 30px;
+	font-size: 12px;
+}
+.field-wrap.datafield .field:hover {
+	border: 1px solid #529fe8;
+	outline: 1px solid #529fe8;
+	border-radius:3px;
+}
+.r-datafield {
+	cursor: pointer;
+	width: 100%;
+	padding: 2px;
+}
+

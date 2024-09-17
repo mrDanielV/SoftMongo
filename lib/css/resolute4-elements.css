@@ -1,0 +1,100 @@
+:root {
+	--resizer-size: 6px;
+}
+.resizer-wash{
+	user-select:none;
+	-webkit-user-select: none;
+	inset: 0 0 0 0;
+	position:absolute;
+	background-color:transparent;
+	z-index:250000;
+}
+.resizer-wash.hidden{
+	display:none;
+	visibility:hidden;
+}
+.resizer-border{
+	position:absolute;
+	background-color:transparent;
+	border:1px dashed #3b5a82;
+	z-index:60000;
+	box-sizing: border-box;
+}
+
+.resizer{
+	position: absolute;
+	display: block;
+	z-index: 1;
+}
+.resizer.nw {
+	width: var(--resizer-size);
+	height: var(--resizer-size);
+	top: 0px;
+	left: 0px;
+}
+.resizer.n {
+	height: var(--resizer-size);
+	top: 0px;
+	left: var(--resizer-size);
+	right: var(--resizer-size);
+}
+.resizer.ne {
+	width: var(--resizer-size);
+	height: var(--resizer-size);
+	top: 0px;
+	right: 0px;
+}
+.resizer.e {
+	width: var(--resizer-size);
+	top: var(--resizer-size);
+	bottom:var(--resizer-size);
+	right:0px;
+}
+.resizer.se {
+	width: var(--resizer-size);
+	height: var(--resizer-size);
+	bottom:0px;
+	right:0px;
+}
+.resizer.s {
+	height: var(--resizer-size);
+	bottom:0px;
+	right:var(--resizer-size);
+	left:var(--resizer-size);
+}
+.resizer.sw {
+	height: var(--resizer-size);
+	width: var(--resizer-size);
+	bottom:0px;
+	left:0px;
+}
+.resizer.w {
+	width: var(--resizer-size);
+	top: var(--resizer-size);
+	bottom:var(--resizer-size);
+	left:0px;
+}
+.nw{
+	cursor: nw-resize;
+}
+.n{
+	cursor: n-resize;
+}
+.ne{
+	cursor: ne-resize;
+}
+.e{
+	cursor: e-resize;
+}
+.se{
+	cursor: se-resize;
+}
+.s{
+	cursor: s-resize;
+}
+.sw{
+	cursor: sw-resize;
+}
+.w{
+	cursor: w-resize;
+}

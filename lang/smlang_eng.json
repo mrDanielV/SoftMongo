@@ -1,0 +1,477 @@
+{
+	"code": "eng",
+	"name": "English",
+	"values": {
+		"yes": "Yes",
+		"no": "No",
+		"save": "Save",
+		"apply": "Apply",
+		"create": "Create",
+		"execute": "Execute",
+		"confirm": "Confirmation",
+		"close": "Close",
+		"cancel": "Cancel",
+		"closeWin": "Close window",
+		"invalidJSON": "Invalid JSON!",
+		"pages": "Records <b>{0} - {1}</b> out of <b>{2}</b>",
+		"login": {
+			"001": "Username",
+			"002": "Password",
+			"003": "Login",
+			"004": "Enter username and password",
+			"005": "Bad username or password"
+		},
+		"top": {
+			"001": "Servers",
+			"002": "Databases",
+			"003": "Version",
+			"004": "Logout"
+		},
+		"servers": {
+			"title": "MongoDB Server List",
+			"001": "No connection"
+		},
+		"createDB": {
+			"title": "Create new Database"
+		},
+		"dbases": {
+			"title": "Databases",
+			"info": "Server name: {0}, MongoDB version: {1}",
+			"alerts": {
+				"001": "Error of getting the database list"
+			}
+		},
+		"dbase": {
+			"colcreate": "create new collection"
+		},
+		"dbaseInfo": {
+			"title": "DB",
+			"menu": {
+				"create": "Create new collection",
+				"import": "Import data",
+				"export": "Export data"
+			},
+			"summary": {
+				"001": "DB size on disk",
+				"002": "Count of collections",
+				"003": "Count of objects",
+				"004": "Data size",
+				"005": "Storage size",
+				"006": "The average size of the object",
+				"007": "Number of indexes",
+				"008": "The size of the indexes"
+			},
+			"colsList": {
+				"expand": "Show collections list",
+				"collaps": "Collections list (hide)",
+				"th": {
+					"001": "Collection",
+					"002": "Records cnt",
+					"003": "Data size",
+					"004": "Size on disk",
+					"005": "Average obj size",
+					"006": "Indexes cnt",
+					"007": "Indexes size"
+				}
+			}
+		},
+		"collectionCreate": {
+			"title": "New collection",
+			"done": "The collection <b>{0}</b> has been created..."
+		},
+		"collectionMain": {
+			"collection": "Collection",
+			"menu": {
+				"view": "View collection",
+				"insert": "Insert record",
+				"indexes": "Indexes",
+				"aggregate": "Aggregation",
+				"import": "Import",
+				"export": "Export",
+				"clear": "Erase collection",
+				"drop": "Drop collection"
+			},
+			"alerts": {
+				"001": "Remove all records in collection?",
+				"002": "ALL RECORDS in collection WILL BE REMOVED?",
+				"003": "Are you show that it's exectly what you want?",
+				"004": "Drop collection?",
+				"005": "COLLECTION {0} WILL BE REMOVED!",
+				"006": "Collection <b>{0}</b> was droped..."
+			}
+		},
+		"upsert": {
+			"title": {
+				"add": "New record object",
+				"edit": "Edit record",
+				"view": "View record"
+			},
+			"alerts": {
+				"001": "Saving an empty object is unacceptable!",
+				"002": "The record is saved!"
+			}
+		},
+		"query": {
+			"form": {
+				"select": "Select query",
+				"modify": "Update query",
+				"remove": "Remove query",
+				"alarm": "ATTENTION! Deleting records is fatality! Make sure three times that you are deleting exactly what you want to remove!",
+				"querySet": "Fields to update",
+				"explain": "Explain-analytics for query",
+				"execute": "Run query",
+				"clear": "Reset all",
+				"sort": "Sort",
+				"fields": "Fields",
+				"time": "Execution time",
+				"empty": "No records..."
+			},
+			"sort": {
+				"title": "Sorting query results",
+				"fields": "Set the fields (paths) to sort the query results"
+			},
+			"fields": {
+				"title": "Select fields for query results",
+				"001": "Add each field",
+				"002": "Add",
+				"003": "Or specify, separated by commas, the fields (paths) to be selected by the query: id, name, type.name etc"
+			},
+			"alerts": {
+				"001": "Invalid JSON in Fields to update",
+				"002": "It's will change the records! Continue?",
+				"003": "Are you sure you want to DELETE the records???"
+			}
+		},
+		"explain": {
+			"title": "Summary query metrics",
+			"nDocs": "Count of documents",
+			"msTime": "Execution time, ms",
+			"exDocs": "Documents used",
+			"isSort": {
+				"title": "Memory sort used",
+				"yes": "YES",
+				"no": "no"
+			},
+			"exKeys": "Count of keys used",
+			"indexCns": "Indexes"
+		},
+		"record": {
+			"menu": {
+				"edit": "Edit",
+				"refresh": "Refresh",
+				"remove": "Remove",
+				"expand": "Expand",
+				"json": "JSON"
+			},
+			"collaps": "Collaps",
+			"expand": "Expand",
+			"alerts": {
+				"001": "Copied to the clipboard!",
+				"002": "The record is updated",
+				"003": "Are you sure you want to DELETE the record?",
+				"004": "The record has been deleted!",
+				"005": "The record has been updated!",
+				"006": "The record has been saved!"
+			}
+		},
+		"node": {
+			"date": "Datetime",
+			"menu": {
+				"update": "Edit value",
+				"query": "Build query",
+				"queryAdd": "Add to the query",
+				"rename": "Rename field",
+				"remove": "Remove field",
+				"clear": "Clear value",
+				"copyPath": "Copy path",
+				"addIndex": "Create index"
+			},
+			"opener": {
+				"collaps": "Collapse the entire level",
+				"expand": "Expand the level"
+			}
+		},
+		"nodeActions": {
+			"alerts": {
+				"001": "Unknown action"
+			},
+			"update": {
+				"form": {
+					"title": "Edit field value",
+					"path": "Path",
+					"type": {
+						"label": "Data type",
+						"string": "String / Text",
+						"number": "Number",
+						"mixed": "Object / Array",
+						"boolean": "Boolean",
+						"null": "NULL"
+					},
+					"value": "Value",
+					"confirm": "Save the changes?"
+				}
+			},
+			"query": {
+				"form": {
+					"title": "Query for"
+				}
+			},
+			"rename": {
+				"form": {
+					"title": "Rename"
+				},
+				"alerts": {
+					"001": "The new node path is not specified"
+				}
+			},
+			"remove": "Remove {0}?",
+			"clear": {
+				"001": "Value {0} allready is NULL! An absurd action...",
+				"002": "Set the value of {0} = NULL?"
+			},
+			"copyPath": {
+				"001": "Copied to the clipboard",
+				"002": "Could not be copied to the clipboard"
+			}
+		},
+		"view": {
+			"title": "View Object",
+			"001": "Copy to Clipboard",
+			"002": "Copied to the clipboard",
+			"003": "Saving an empty object is not allowed!"
+		},
+		"aggregate": {
+			"title": "Aggregation plan (Pipeline)",
+			"actions": {
+				"001": "Add stage",
+				"002": "Save pipeline",
+				"003": "Load pipeline",
+				"004": "Export to JSON",
+				"005": "Import from JSON",
+				"006": "Execute pipeline",
+				"007": "Export results",
+				"008": "Apply"
+			},
+			"form": {
+				"title": "Add aggregation stage",
+				"001": "Set type of aggregation stage",
+				"002": "Add",
+				"003": "Cancel",
+				"004": "Choose type of aggregation stage!",
+				"005": "Manual description for aggregation stage"
+			},
+			"alerts": {
+				"001": "Empty plan of aggregation!",
+				"002": "Error of building aggregation plan",
+				"003": "Empty plan of aggregation!",
+				"004": "It's Done!",
+				"005": "Empty plan of aggregation!",
+				"006": "Import aggregation plan...",
+				"007": "Empty plan of aggregation!",
+				"008": "No aggregation results for export",
+				"009": "Delete stage",
+				"010": "Empty stage object"
+			},
+			"results": {
+				"001": "Expand"
+			}
+		},
+		"indexes": {
+			"actions": {
+				"001": "Add index"
+			},
+			"form": {
+				"title": "Create index",
+				"001": "Index name",
+				"002": "Fields for indexing",
+				"003": "Uniqueness of values",
+				"004": "Create"
+			},
+			"alerts": {
+				"001": "Fill out the form, specifying at least one field for indexing",
+				"002": "The index has been created!",
+				"003": "Delete index",
+				"004": "Index <b>{0}</b> was removed!"
+			},
+			"info": {
+				"uniq": "UNIQUE",
+				"stat": "Uses",
+				"del": "remove",
+				"since": "since"
+			}
+		},
+		"export": {
+			"title": "Data export",
+			"form": {
+				"mode": {
+					"label": "Export mode",
+					"file": "File (zip)",
+					"text": "Text (on page)"
+				},
+				"type": {
+					"label": "Export area type",
+					"one": "One collection",
+					"list": "Some collections",
+					"all": "All collections"
+				},
+				"collection": "Collection",
+				"collections": "Collections",
+				"query": "Data query for export",
+				"setLimit": "The range of records",
+				"execute": "Export"
+			},
+			"alerts": {
+				"001": "No collection for export",
+				"002": "Invalid JSON in query",
+				"003": "No collections for export"
+			}
+		},
+		"import": {
+			"title": "Data import",
+			"form": {
+				"mode": {
+					"label": "Import mode",
+					"file": "File (zip)",
+					"text": "Text (softMongo format)"
+				},
+				"file": "File",
+				"fileEmpty": "Set a file",
+				"text": "Text",
+				"execute": "Import"
+			},
+			"alerts": {
+				"001": "Import form data error",
+				"002": "No file for import",
+				"003": "Invalid file format",
+				"004": "No text for import",
+				"005": "Import in process...",
+				"006": "Execution error..."
+			},
+			"success": {
+				"title": "Results of import",
+				"001": "Successfully imported",
+				"002": "Count of collections in import",
+				"003": "Count of errors",
+				"004": "Show errors",
+				"005": "Hide errors"
+			}
+		},
+		"sizes": {
+			"B": "Bytes",
+			"KB": "KB",
+			"MB": "MB",
+			"GB": "GB"
+		},
+		"serverErrors": {
+			"Auth": {
+				"001": "Authorization error",
+				"002": "Unknown username/password!"
+			},
+			"SM": {
+				"001": "Server connect error: {SERVER}, DB: {DB} - {ERROR}",
+				"002": "Mongo server connection config is not found",
+				"003": "Empty MongoDB connection link in configuration",
+				"004": "Empty operation!",
+				"005": "Unknown operation!",
+				"006": "Failed to get the list of server databases",
+				"007": "Same named database already exists on the server",
+				"008": "Failed to create a collection",
+				"009": "Failed to create a database",
+				"010": "Failed to connect to the selected database",
+				"011": "The name of the collection to create is not specified",
+				"012": "Failed to create a collection",
+				"013": "Error deleting a collection",
+				"014": "The record to save is not specified or the format of the recording object is incorrect",
+				"015": "The recording could not be saved!",
+				"016": "The result of the aggregation query contains more than 500 records. Use the $limit and $skip operators to divide the total amount into its component parts.",
+				"017": "There is not enough data to perform the operation!",
+				"018": "The record could not be found!",
+				"019": "Failed to save record",
+				"020": "Failed to get MongoID of record!",
+				"021": "Request execution error",
+				"022": "Error",
+				"023": "Error getting indexes",
+				"024": "Index parameters are not specified",
+				"025": "There are not enough parameters (keys) to create an index",
+				"026": "Index creation error",
+				"027": "The name of the index to delete is not specified",
+				"028": "Error deleting the index",
+				"query": {
+					"001": "Invalid request type",
+					"002": "Invalid JSON request format",
+					"003": "Invalid JSON request format for updating ($set ...)",
+					"004": "Request execution error",
+					"005": "There are no records to update!",
+					"006": "There are no records to delete!",
+					"007": "Request execution error...",
+					"008": "Updated records:",
+					"009": "Deleted records:"
+				}
+			},
+			"DB": {
+				"001": "DB: Unknown function - ",
+				"002": "DB: Empty MongoDB connection link",
+				"003": "DB: Empty DataBase name",
+				"004": "DB: Mongo SM-driver is not found",
+				"005": "DB: Empty DataBase name",
+				"006": "DB: MongoDB connection link is not specified",
+				"007": "DB: Error in MongoDB connection link format",
+				"008": "DB: MongoDB connection link is not setted",
+				"009": "DB: Dbase Administrator login/password is not specified",
+				"010": "DB: MongoDB connection link is not setted",
+				"011": "DB: Dbase User login/password is not specified"
+			},
+			"Mongo": {
+				"conn": "no connection",
+				"coll": "the collection is not specified",
+				"001": "DB: no connection",
+				"002": "DB: empty connection link",
+				"003": "DB command: the command is not specified",
+				"004": "DB createIndex: The index key (path) is not specified",
+				"005": "DB createIndex: Invalid index key",
+				"006": "DB dropIndex: The name of the index is not specified",
+				"007": "DB find: Request execution timeout exceeded",
+				"008": "DB insert: Error in the format of the recording object",
+				"009": "DB aggregate: The sequence of aggregation stages (pipeline) is not specified",
+				"010": "DB execute: an empty command to execute",
+				"011": "DB bulk: The operation is not specified",
+				"012": "DB bulk: Unknown operation {0} (BulkWrite)",
+				"013": "DB bulk: Request execution error",
+				"014": "DB commit: Attempt to execute commit without an open bulkWrite"
+			},
+			"Import": {
+				"001": "Dbase connection error",
+				"002": "Import error:",
+				"003": "Empty text data for import",
+				"004": "Too few data for import",
+				"005": "Archive file is not specified",
+				"006": "Archive file reading error!",
+				"007": "Archive file reading error",
+				"008": "No collection for import!",
+				"009": "The record could not be saved",
+				"010": "Error adding a record:"
+			},
+			"Export": {
+				"001": "Dbase connection error",
+				"002": "Collection for export is not specified",
+				"003": "Collections for export is not specified",
+				"004": "Export error:",
+				"005": "Error in completeness of the export parameters",
+				"006": "The number of exported records is more than allowed for exporting as text! Use export to a file.",
+				"007": "Error in completeness of the export parameters for aggregation",
+				"008": "Failed to create a file in the folder {0}. You may not have write access to this folder.",
+				"009": "Failed to create an archive in the folder {0}. You may not have write access to this folder."
+			},
+			"Opers": {
+				"001": "File import error",
+				"002": "File for import is not specified",
+				"003": "Couldn't read the contents of the file, JSON format error"
+			}
+		},
+		"Resolute": {
+			"fileinput": {
+				"extentionError": "Only files with extensions: {0} are allowed"
+			}
+		}
+	}
+}

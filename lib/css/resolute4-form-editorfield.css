@@ -1,0 +1,106 @@
+/* Редактор html */
+
+.resolute-editorfield {
+	border: 1px solid #b5b8c8;
+	border-radius: 2px;
+	position: absolute;
+	inset: 0px;
+}
+
+.resolute-editorfield .toolbar {
+	height: 24px;
+	background-color: #eeedfb;
+	border-bottom: 1px solid #b5b8c8;
+	position: relative;
+	padding: 1px;
+	display:flex;
+	z-index:1;
+}
+.resolute-editorfield .toolbar .button {
+	color: #468;
+	min-width: 16px;
+	margin-right: 1px;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 12px;
+	font-family: Tahoma,Arial,sans-serif;
+	padding: 2px;
+	padding-top: 3px;
+	text-align: center;
+	opacity: 0.87;
+	transition: opacity 0.5s;
+	margin-top: 1px;
+}
+.resolute-editorfield .toolbar .button:hover{
+	opacity:1;
+}
+.resolute-editorfield .toolbar .button .material-icons{
+	font-size:14px;
+}
+.resolute-editorfield .toolbar .separator {
+	width:8px;
+}
+.resolute-editorfield .toolbar .button.pushed{
+	box-shadow:0 1px 2px rgba(0,0,0,0.4);
+}
+
+.resolute-editorfield .toolbar .button[data-code="bold"]{
+	font-weight:bold;
+}
+.resolute-editorfield .toolbar .button[data-code="italic"]{
+	font-style: italic;
+	text-indent: -2px;
+}
+.resolute-editorfield .toolbar .button[data-code="underline"]{
+	text-decoration: underline;
+}
+.resolute-editorfield .toolbar .button[data-code="strike"]{
+	text-decoration-line: line-through;
+}
+.resolute-editorfield .toolbar .button .dropdown{
+	position: absolute;
+	display:none;
+	width: 120px;
+	height: 120px;
+	border: 1px solid #b5b8c8;
+	background-color: #eeedfb;
+	z-index: 12000;
+	top: 23px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.resolute-editorfield .toolbar .button:hover .dropdown{
+	display:block;
+}
+.resolute-editorfield .editor, .resolute-editorfield .codeview {
+	background: linear-gradient(to bottom, #d0d0d0 0px,#fff 3px);
+	position: absolute;
+	top: 27px;
+	left: 0px;
+	border-radius: 0 0 2px 2px;
+	overflow-y: auto;
+	scrollbar-width: thin;
+	min-height: 120px;
+	right: 0px;
+	font-size: 12px;
+	padding: 6px;
+	box-sizing: content-box;
+	height: calc(100% - 39px);
+	z-index: 0;
+}
+.resolute-editorfield .codeview{
+	display:none;
+	visibility:hidden;
+}
+.resolute-editorfield.view .codeview {
+	display: block;
+	visibility: visible;
+	border: 0px;
+	width: calc(100% - 12px);
+	height: calc(100% - 39px);
+	top: 26px;
+	resize: none;
+}
+.resolute-editorfield.view .editor{
+	display:none;
+	visibility:hidden;
+}

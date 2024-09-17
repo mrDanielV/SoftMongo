@@ -1,0 +1,77 @@
+/* FileField */
+
+.field-wrap.filefield .field {
+	height: auto;
+	min-height: 30px;
+	padding: 0;
+}
+.field-wrap.filefield.focused .field{
+	padding: 0;
+}
+
+.r-filefield {
+	padding: 2px;
+	width: 100%;
+	display: flex;
+	flex-flow: wrap;
+	cursor: pointer;
+}
+.r-filefield:hover {
+	border-radius:2px;
+	outline: 2px solid #529fe8;
+	background-color: #e5eff9;
+}
+
+.r-filefield-checkbox .field {
+	border: none !important;
+	background-color: transparent !important;
+	outline: none !important;
+	min-height: unset !important;
+	width: 18px;
+}
+.r-filefield-checkbox {
+	padding-left: 3px;
+}
+.r-filefield-file {
+	display: none;
+}
+
+.r-filefield-label {
+	font-size: 12px;
+	color: #446688;
+}
+
+.r-filefield-empty {
+	padding: 5px;
+	font-size: 11px;
+	color: #bc893b;
+}
+
+.r-filefield-icon {
+	padding: 2px;
+	padding-left: 0;
+	padding-right: 3px;
+}
+
+.r-filefield-centre {
+	max-width: 80%;
+	display: flex;
+	flex-flow: column;
+}
+
+.r-filefield-date {
+	font-size: 11px;
+	color: #bc893b;
+}
+.r-filefield-size {
+	font-size: 11px;
+	color: #666;
+}
+
+.r-filefield-btn .icon {
+	font-size: 22px !important;
+	margin: 3px !important;
+}
+.r-filefield-btn .icon:hover {
+	color: #000 !important;
+}

@@ -1,0 +1,95 @@
+/* Секции формы */
+
+.section {
+	position: relative;
+	box-shadow: 0 0 4px #AAA;
+	padding: 0px;
+	border: 1px solid #999;
+	border-left: 0px;
+	border-right: 0px;
+	background: #ffffff;
+	background: linear-gradient(to bottom,  #ffffff 0%,#e8e8e8 100%);
+	padding-top: 6px;
+	padding-bottom: 6px;
+	margin-bottom:8px;
+}
+.section[data-title]::before {
+	content: attr(data-title);
+	display: block;
+	font-family: "ff-good-sc-web-pro";
+	font-size: 17px;
+	color: #468;
+	position: absolute;
+	top: -20px;
+	/*text-shadow: 0 1px 1px rgba(255,255,255,1);*/
+	left: 3px;
+	right: 6px;
+	border-bottom: 1px solid #cdd5e4;
+}
+.section[data-title]{
+	margin-top:29px;
+}
+.section.transparent{
+	border:0px solid !important;
+	box-shadow:none !important;
+	background:transparent !important;
+}
+.section .header{
+	color: #395877;
+	margin-top: -6px;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #d4d5e378;
+	text-indent:6px;
+	margin-bottom: 3px;
+	border-top: 1px solid #EEEEEE;
+	padding: 3px;
+}
+.section.transparent .header{
+	background-color: transparent !important;
+	border-top: 0px solid !important;
+	border-bottom: 1px dotted #468;
+	margin-bottom:10px;
+}
+.section .header .helptext{
+	float: right;
+	font-weight: normal;
+	margin-right: 6px;
+}
+.section-body {
+	display: flex;
+	align-items: stretch;
+	padding: 1px 4px 4px 4px;
+	flex-wrap: wrap;
+}
+.section-body .column {
+	padding: 8px 0px 0 0;
+	box-sizing: border-box;
+}
+
+.section-body .column.label-top {
+	padding-right: 8px;
+}
+
+.section .column[data-title]::before {
+	content: attr(data-title);
+	display: block;
+	font-family: "ff-good-sc-web-pro";
+	font-size: 20px;
+	color: #468;
+	position: relative;
+	top: 0px;
+	text-shadow: 0 1px 1px rgba(255,255,255,1);
+	left: 6px;
+	right: 6px;
+}
+.section .column[data-title]{
+	margin-top:6px;
+}
+.section .column.accent {
+	background-color: #eeefff;
+	padding: 12px;
+	border: 2px solid #468;
+	border-radius: 4px;
+	/* box-shadow: 0 1px 16px rgba(0,0,0,0.3); */
+}

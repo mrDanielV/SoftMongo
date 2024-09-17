@@ -1,0 +1,310 @@
+.resolute-modal {
+	position: fixed;
+	inset:0;
+	background: radial-gradient(circle at center, rgba(72, 136, 215, 0.24) 0%,rgba(59, 70, 94, 0.66) 100%);
+	display: flex;
+	align-items: center;
+	opacity:1;
+	transition: opacity 0.15s;
+	z-index:20000;
+}
+.no-overflow{
+	overflow: hidden;
+}
+
+.resolute-modal.listwindow{
+	
+}
+.resolute-modal.listwindow .resolute-modal-body .caption {
+	display: flex;
+	align-items: center;
+	color: #fff;
+	margin-bottom: 6px;
+	margin-left: -6px;
+	margin-right: -6px;
+	margin-top: -6px;
+	padding: 6px;
+	background-color: #6c7bb5;
+	border-radius: 3px 3px 0 0;
+	text-shadow: 0 1px 1px #000;
+}
+.resolute-modal.listwindow.full .resolute-modal-body .caption{
+	border-radius:0px;
+}
+.resolute-modal.listwindow .resolute-modal-body {
+	padding: 6px;
+}
+
+.resolute-modal.inactive{
+	background: transparent;
+}
+.resolute-modal.hidden{
+	opacity:0;
+}
+.resolute-modal-wrap {
+	box-sizing: border-box;
+	padding: 2px;
+	background-color: #565c7d;
+	margin: 0 auto;
+	box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+	transform: scale(1);
+	opacity: 1;
+	transition: transform 0.2s, opacity 0.15s;
+	border-radius: 6px;
+}
+.resolute-modal-wrap.modal-alert{
+	max-width: 80%;
+	min-width: 400px;
+}
+.full .resolute-modal-wrap{
+	margin: unset;
+	position:absolute;
+	inset:0px;
+	height: unset !important;
+	transition: top 0.3s, left 0.3s, right 0.3s, bottom 0.3s;
+}
+
+.hidden .resolute-modal-wrap{
+	transform:scale(1);
+	opacity:0;
+}
+.resolute-modal-body {
+	background-color: rgb(219, 232, 249);
+	border-radius: 4px;
+	padding: 12px;
+}
+.modal-alert .resolute-modal-body .content{
+	padding: 10px;
+}
+.modal-alert .resolute-modal-body .footer {
+  	margin: 10px;
+}
+.full .resolute-modal-body {
+	background-color: rgb(219, 232, 249);
+	border-radius: 0px;
+	padding: 8px !important;
+	display: flex;
+	flex-direction: column;
+	width: unset !important;
+	inset:0px;
+	position:absolute;
+	transition: top 0.3s, left 0.3s, right 0.3s, bottom 0.3s;
+}
+.resolute-modal.listwindow.full .resolute-modal-body{
+	padding: 6px !important;
+}
+
+
+.resolute-modal-body .caption {
+	display: flex;
+	align-items: center;
+	color: #565c7d;
+	margin-bottom: 12px;
+}
+.resolute-modal-body .caption .title {
+	font-family: "ff-good-sc-web-pro";
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.resolute-modal-body .caption .helptext {
+	font-family: Arial,Tahoma,sans-serif;
+	font-size: 13px;
+	line-height: 7px;
+	opacity:0.7;
+}
+.paperblue .resolute-modal-body .caption .helptext{
+	color: #fff;
+}
+
+.resolute-modal-body .caption .buttons{
+	display:flex;
+	flex:1;
+	align-items: end;
+	justify-content: end;
+}
+.resolute-modal-body .caption .buttons .button {
+	margin: 2px;
+	opacity: 0.87;
+	cursor: pointer;
+}
+.paperblue .resolute-modal-body .caption .buttons .button{
+	color:#fff;
+	text-shadow:0 1px 1px rgba(0,0,0,0.5);
+}
+
+.resolute-modal-body .caption .buttons .button:hover{
+	opacity:1;
+};
+.resolute-modal-body .caption.has-icon .title{
+	margin-left:6px;
+}
+.resolute-modal-body .content {
+	font-size: 14px;
+	overflow-y: auto;
+	scrollbar-width: thin;
+}
+.resolute-modal-body .component.search{
+	background-color:rgb(219, 232, 249);
+}
+.full .resolute-modal-body .content {
+	flex:1;
+}
+.resolute-modal-body .footer {
+	font-size: 13px;
+	display: flex;
+	margin-top: 12px;
+}
+.resolute-modal.listwindow .resolute-modal-body .footer{
+	margin-top: 6px;
+}
+.resolute-modal-body .content .section:last-child{
+	margin-bottom:0px;
+}
+.resolute-modal-body .footer .info {
+	color:#565c7d;
+	flex: 1;
+	text-align: left;
+	align-items: center;
+}
+.paperblue .resolute-modal-body .footer .info{
+	color:#fff;
+	text-shadow: 0 1px 0px rgba(0,0,0,0.7);
+}
+.resolute-modal-body .footer .buttons{
+	display:flex;
+}
+.resolute-modal-body .footer .button {
+	text-align: center;
+	max-width: 80%;
+	background-color: #fff;
+	border: 1px solid #b5b5b5;
+	color: #444;
+	padding: 7px 12px;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+	font-size: 1em;
+	transition: background-color 0.2s, box-shadow 0.2s;
+	flex:1;
+	margin-right:6px;
+}
+.button.disabled {
+	color: #888 !important;
+}
+.resolute-modal-body .footer .button:focus{
+	outline:1px solid #529fe8;
+}
+.resolute-modal-body .footer .button.disabled:focus{
+	outline:none;
+}
+
+.resolute-modal-body .footer .button.primary{
+	background-color: #dde8ff;
+}
+.resolute-modal-body .footer .button:hover {
+	box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+	background-color: #f9e38e;
+	text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+.resolute-modal-body .footer .button.disabled:hover {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+	background-color: #fff;
+	text-shadow: none;
+}
+.resolute-modal-body .footer .button:last-child{
+	margin: 0 auto;
+}
+
+
+
+@media (max-width: 450px) {
+	.resolute-modal-body .content {
+		font-size: 17px;
+	}
+	.resolute-modal-body .footer {
+		font-size: 15px;
+	}
+}
+
+.resolute-wait{
+
+}
+.resolute-wait-body{
+	text-align:center;
+}
+.resolute-wait-body .title {
+	color: #fff;
+	position: relative;
+	top: 25px;
+	font-family: Tahoma;
+	padding: 2px 12px;
+	border-radius: 12px;
+	font-size: 14px;
+	text-shadow: 0 1px 4px rgb(0, 0, 0),0 0px 8px rgb(0, 0, 0,0.69);
+}
+.resolute-wait-wrap {
+	box-sizing: border-box;
+	padding: 3px;
+	margin: 0 auto;
+	opacity: 1;
+}
+.resolute-ellipsis {
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 80px;
+}
+.resolute-ellipsis div {
+	position: absolute;
+	top: 33px;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	background: #fff;
+	animation-timing-function: cubic-bezier(0, 1, 1, 0);
+	box-shadow: 0px 1px 4px rgba(0,0,0,0.8);
+}
+.resolute-ellipsis div:nth-child(1) {
+	left: 8px;
+	animation: resolute-ellipsis1 0.6s infinite;
+}
+.resolute-ellipsis div:nth-child(2) {
+	left: 8px;
+	animation: resolute-ellipsis2 0.6s infinite;
+}
+.resolute-ellipsis div:nth-child(3) {
+	left: 32px;
+	animation: resolute-ellipsis2 0.6s infinite;
+}
+.resolute-ellipsis div:nth-child(4) {
+	left: 56px;
+	animation: resolute-ellipsis3 0.6s infinite;
+}
+@keyframes resolute-ellipsis1 {
+	0% {
+	transform: scale(0);
+	}
+	100% {
+	transform: scale(1);
+	}
+}
+@keyframes resolute-ellipsis3 {
+	0% {
+	transform: scale(1);
+	}
+	100% {
+	transform: scale(0);
+	}
+}
+@keyframes resolute-ellipsis2 {
+	0% {
+	transform: translate(0, 0);
+	}
+	100% {
+	transform: translate(24px, 0);
+	}
+}
+

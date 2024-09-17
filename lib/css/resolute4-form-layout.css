@@ -1,0 +1,258 @@
+/* Секции формы  'Roboto Condensed'*/
+
+.form{
+	font-family:Tahoma, sans-serif;
+}
+
+.field-wrap{
+	display: grid;
+	align-items: stretch;
+	grid-gap: 0px;
+}
+.field-wrap.nolabel{
+	grid-template-columns:0px;
+}
+
+.field-wrap label, .field-wrap.label-left label {
+	grid-column: 1;
+	grid-row:auto/span 3;
+	min-height: 19px;
+	padding-top: 7px;
+	font-size: 12px;
+	text-align: right;
+	padding-right: 6px;
+	box-sizing: border-box;
+	color: #446688;
+}
+
+
+/* Лейблы сверху */
+.field-wrap.label-top label {
+	grid-column: 1;
+	grid-row: 1;
+	padding-top: 1px;
+	text-align: left;
+}
+.field-wrap.label-top .field{
+	grid-column: 1;
+	grid-row: 2;
+}
+.field-wrap.label-top .error {
+	grid-column: 1;
+	grid-row: 3;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+.field-wrap.label-top .helptext {
+	grid-column: 1;
+	grid-row: 4;
+}
+/* end Лейблы сверху */
+
+
+.field-wrap .field{
+	grid-column: 2;
+	grid-row: 1;
+	box-sizing: border-box;
+	border: 1px solid #9b9da8;
+	border-radius: 3px;
+	background-color: #fff;
+	outline: 1px solid #9b9da84f;
+	padding: 4px;
+	display: flex;
+	height: 30px;
+}
+.field-wrap.textarea .field {
+	border: 1px solid #9b9da8;
+	outline: 1px solid #9b9da84f;
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	max-height: unset;
+	height: auto;
+}
+.field-wrap.focused .field{
+	border: 2px solid #529fe8;
+	border-radius:3px;
+}
+.field-wrap .field:has(input:focus), .field-wrap .field:has(textarea:focus){
+	border: 2px solid #529fe8;
+	border-radius:3px;
+}
+.form .field-wrap{
+	margin-bottom: 8px;
+}
+.form .field-wrap:not([style*="display: none"]):last-child {
+	margin-bottom: 0px;
+}
+.field-wrap.textarea .field textarea{
+	scrollbar-width: thin;
+	font-family: Tahoma, sans-serif;
+	font-size:12px;
+}
+.field-wrap .field .icon {
+	font-size: 20px;
+	color: #aaa;
+	margin-top: -1px;
+	margin-left: -1px;
+	max-width: 20px;
+}
+.field-wrap .field input,.field-wrap .field textarea {
+	flex:1;
+	background-color: transparent;
+	border: 0px;
+	width: 100%;
+}
+
+.field-wrap .field .buttons{
+	display: flex;
+	width: -moz-fit-content;
+	width: fit-content;
+}
+.field-wrap .field .buttons .button {
+	font-size: 12px;
+	padding: 3px;
+	box-sizing: border-box;
+	overflow: hidden;
+	cursor: pointer;
+	text-align: center;
+	background: transparent;
+}
+.field-wrap .field .buttons .button.has-icon {
+	padding: 0px;
+}
+.field-wrap .field .buttons .button.has-icon img{
+	top: 3px;
+	position: relative;
+}
+.field-wrap .field .buttons .button.text {
+	width: max-content;
+	color: #254462;
+	margin-top: -1px;
+	height: 21px;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.field-wrap .field .buttons .button .icon {
+	font-size: 18px;
+	color: #aaa;
+	margin-top: 0;
+	margin-left: 0;
+}
+
+
+.field-wrap.list {
+	line-height: unset;
+}
+
+.field-wrap.display .field {
+	/*border: none;
+	outline: none;*/
+	background: none;
+	font-size: 12px;
+	padding: 6px;
+}
+
+
+.field-wrap.mandatory label{
+	font-weight:bold;
+}
+.field-wrap .error {
+	grid-column: 2;
+	grid-row: 2;
+	font-size: 10px;
+	color: red;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+.field-wrap .helptext {
+	grid-column: 2;
+	grid-row: 3;
+	font-size: 10px;
+	color: #468;
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+.field-wrap.invalid .field{
+	border: 1px solid red;
+	outline: 2px solid #ff000020;
+}
+.field-wrap.invalid.focused .field{
+	border: 2px solid red;
+}
+
+.field-wrap.resolute-disabled label{
+	color:#777;
+}
+.field-wrap.resolute-disabled .field span.icon{
+	color:#777;
+}
+.field-wrap.resolute-disabled .field{
+	opacity: 0.65;
+}
+.field-wrap.resolute-disabled .field .buttons{
+	display:none;
+	visibility:hidden;
+}
+
+
+/* stack fields */
+.field-wrap.stack > .field {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	max-height: unset;
+	padding: 0px;
+	display: flex;
+	flex-wrap: wrap;
+	gap:3px;
+}
+.field-wrap.stack > .field .field-wrap{
+	flex:auto;
+	margin-bottom: 0px;
+}
+.field-wrap.stack > .field .field-wrap:last-child{
+	margin-bottom:0px;
+}
+/* end stack fields */
+
+
+.resolute-listview .item{
+	font-size:13px;
+	color:#444;
+	box-sizing:border-box;
+	padding:2px;
+	cursor:pointer;
+	border-color: #ffffff #ffffff #ccc;
+	border-style: solid;
+	border-width: 1px;
+}
+.resolute-listview .item:hover, .resolute-listview .item.hover{
+	background-color: #dfe8f6 !important;
+	padding:2px;
+}
+.resolute-listview .item.selected{
+	background-color:#ffe37a;
+	padding:2px;
+}
+
+
+.form-infobox {
+	color: #446688;
+	background-color: #ffffff75;
+	padding: 12px;
+	border: 1px solid #fffffff7;
+	border-radius: 3px;
+	text-align: justify;
+	outline: 1px solid #4466889c;
+	margin: 1px;
+	margin-top: 6px;
+	margin-bottom: 6px !important;
+}
+.form-infobox h1,.form-infobox title{
+	margin-top: 0;
+	margin-bottom: 6px;
+	font-size: 1em;
+}

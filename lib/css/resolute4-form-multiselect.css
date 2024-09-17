@@ -1,0 +1,31 @@
+/* MultiSelect */
+.r-multiselect {
+	width: 100%;
+	font-size: 12px;
+	padding: 3px;
+}
+.field-wrap.multiselect .field {
+	height: auto;
+	min-height: 30px;
+}
+
+/* Окно выбора */
+.r-multiselect-modal {
+	min-width: 360px !important;
+}
+.r-multiselect-content {
+	padding: 7px;
+}
+.r-multiselect-search {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 3px;
+}
+.r-multiselect-list {
+	max-height: 200px;
+	overflow-y: auto;
+}
+.r-multiselect-list .r-checkbox {
+	padding: 2px;
+}
+
